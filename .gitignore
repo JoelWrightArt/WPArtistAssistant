@@ -46,3 +46,42 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# Ignore plugin build artifacts
+*.zip
+*.tar.gz
+*.bak
+
+# Ignore compiled/minified files (if using a build system)
+*.min.js
+*.min.css
+*.map
+
+# Ignore node_modules (if using npm/Yarn for assets)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore composer dependencies (if using PHP dependencies)
+vendor/
+composer.lock
+
+# Ignore environment & API key files (security best practice)
+.env
+.env.local
+.env.production
+.env.development
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore IDE/editor configuration files
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
